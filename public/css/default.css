@@ -5,6 +5,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #219cc2;
+    size: 100%;
 }
 #header{
     background:black;
@@ -14,4 +15,11 @@ body{
     display: inline;
     padding: 10px;
     list-style: none;
+}
+#mensaje{
+    background-color: blue;
+    width: 100px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 50px;
 }

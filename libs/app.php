@@ -18,6 +18,7 @@ class App{
             require_once $archivoController;
             $controller = new main;
             $controller -> loadmodel('main');
+            $controller->render();
             
             return false; 
         }
@@ -27,9 +28,13 @@ class App{
             $controller -> loadmodel($url[0]);
 
             if(isset($url[1])){
-                $controller->{$url[1]};
+                $controller->{$url[1]}();
+            }else
+            {
+                $controller->render();
             }
-        }else{
+        }else
+        {
             $controller = new Errores();
         }
     }

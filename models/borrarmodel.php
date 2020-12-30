@@ -1,11 +1,11 @@
 <?php
-class nuevomodel extends model
+class borrarmodel extends model
 {
     public function __construct()
     {
         parent::__construct();
     }
-    function insert($datos)
+    function borrar($id)
     {
         try
         {

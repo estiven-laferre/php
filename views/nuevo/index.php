@@ -10,13 +10,16 @@
     <?php require 'views/header.php'?>
     <div>
     <h2 class='center'>nuevo</h2>
+
+    <div id="mensaje"><?php echo $this->mensaje; ?></div>
     <form action="<?php echo constant('URL');?>nuevo/registrar_alumno" method="POST">
-    <label >nombre</label>
-    <input type="text">
     <label >matricula</label>
-    <input type="text">
+    <input type="text" name='matricula'>
+    <label >nombre</label>
+    <input type="text" name='nombre'>
+    
     <label >apellido</label>
-    <input type="text">
+    <input type="text" name='apellido' >
     <input type="submit" value='registrar'>
     </form>
     </div>

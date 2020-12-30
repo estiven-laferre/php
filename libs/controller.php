@@ -9,7 +9,7 @@ class Controller{
     }
     function loadmodel($model)
     {
-      $url='models'.$model.'model';
+      $url='models/'.$model.'model.php';
 
       if(file_exists($url))
       {
