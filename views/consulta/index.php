@@ -28,18 +28,20 @@
           $alumno=new alumno();
           $alumno= $row;
           ?>
-      <tr>
+      <tr id='fila-<?php echo $alumno->matricula?>'>
         <th><?php echo $alumno->matricula; ?></th>
         <th><?php echo $alumno->nombre ;?></th>
         <th><?php echo $alumno->apellido; ?></th>
-        <th><a href="">editar</a></th>
-        <th><a href="">borrar</a></th>
+        <th><a href="<?php echo constant('URL').'consulta/ver/'.$alumno->matricula; ?>">editar</a></th>
+        <!--<th><a href="<?php echo constant('URL').'consulta/eliminar/'.$alumno->matricula; ?>">borrar</a></th>-->
+        <td><button class="bEliminar" data-matricula="<?php echo $alumno->matricula; ?>">Eliminar</button></td>
        </tr>
        <?php } ?>
       </tbody>
     </table>
   
     <?php require 'views/footer.php'?>
+    <script src="<?php echo constant('URL');?>public/js/main.js"></script>
     
 </body>
 </html>

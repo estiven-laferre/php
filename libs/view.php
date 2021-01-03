@@ -1,14 +1,10 @@
 <?php
-
-class View{
-
-    function __construct(){
-        //echo "<p>Vista base</p>";
-    }
-
-    function render($nombre){
+class View
+{
+    //funcion para renderizar vistas ,que las clases de hijas de controllers ejecutan
+    function render($nombre)
+    {
         require 'views/' . $nombre . '.php';
     }
 }
-
 ?>

@@ -1,14 +1,13 @@
 <?php
-
 class Controller{
-
     function __construct()
     {
-        //echo "<p>Controlador base</p>";
+        //ejecucion de view.php para ser usado por las clases hijas
         $this->view = new View();
     }
     function loadmodel($model)
     {
+        //ejecucion de models desde app.php
       $url='models/'.$model.'model.php';
 
       if(file_exists($url))

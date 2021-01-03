@@ -1,13 +1,14 @@
 <?php
-
-class Errores extends Controller{
-
-    function __construct(){
+class Errores extends Controller
+{
+    function __construct()
+    {
+         //ejecucion de la funcion en clase padre controller
         parent::__construct();
+        //notificacion de error
         $this->view->mensaje = "Error genérico";
+         //renderizacion de la vista
         $this->view->render('errores/index');
-        //echo "<p>Error al cargar recurso</p>";
     }
 }
-
 ?>
