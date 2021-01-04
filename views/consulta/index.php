@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
     <title>Document</title>
 </head>
+
 <body>
     <?php require 'views/header.php'?>
-    <div>
-    <h2 class='center'>consulta</h2>
-    </div>
-    <table width='100%'>
+    <h2 class="center" >consulta</h2>
+    <div id="templade">
+     
+    
+    <br>
+    <br>
+    <table >
       <thead>
        <tr>
         <th>matricula</th>
@@ -28,7 +33,7 @@
           $alumno=new alumno();
           $alumno= $row;
           ?>
-      <tr id='fila-<?php echo $alumno->matricula?>'>
+      <tr>
         <th><?php echo $alumno->matricula; ?></th>
         <th><?php echo $alumno->nombre ;?></th>
         <th><?php echo $alumno->apellido; ?></th>
@@ -39,9 +44,10 @@
        <?php } ?>
       </tbody>
     </table>
-  
-    <?php require 'views/footer.php'?>
+  </div>
+    
     <script src="<?php echo constant('URL');?>public/js/main.js"></script>
     
 </body>
 </html>
+<?php require 'views/footer.php'?>

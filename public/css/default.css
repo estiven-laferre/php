@@ -1,13 +1,23 @@
 *{
     padding: 0;
     margin: 0;
+ 
 }
+html, body{
+    height:100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+  }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #219cc2;
-    size: 100%;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    height: 100%;
+    width: 100%;
 }
 #header{
+
     background:black;
     padding: 10px;
 }
@@ -16,10 +26,37 @@ body{
     padding: 10px;
     list-style: none;
 }
+#header ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
 #mensaje{
     background-color: blue;
     width: 100px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 50px;
+}
+#footer{
+  
+  background-image: linear-gradient(to bottom right, rgb(10, 14, 252), rgb(111, 0, 255));
+  
+}
+#ingresar{
+    background-color: lightblue;
+    width: min-content;
+ 
+}
+#templade{
+    display: flex;
+    justify-content: center;
+}
+table{
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgba(10, 252, 179, 0.452), rgb(0, 195, 255) );
+    
+}
+tr{
+    background-color: mediumslateblue;
 }
